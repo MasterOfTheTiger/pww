@@ -1,0 +1,11 @@
+<p>The website that you tried to go to is potentially dangerous. Reason: <span id="reason"></span>.</p>
+<p><a id="link" href="">Go anyway</a></p>
+<script>
+    var info = window.location.href.split('?')[1];
+    console.log(info);
+    info = info.split('&');
+    var reason = info[0].split('=')[1];
+    document.getElementById('reason').innerHTML = reason;
+    var url = reason = info[1].split('=')[1];
+     document.getElementById('link').href = url;
+</script>
