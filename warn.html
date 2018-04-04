@@ -3,7 +3,7 @@
 <script>
     var info = window.location.href.split('?')[1];
     console.log(info);
-    info = info.split('+');
+    info = info.split('AND');
     var reason = info[0].split('=')[1];
     document.getElementById('reason').innerHTML = reason;
     var url = reason = info[1].split('=')[1];
